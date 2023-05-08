@@ -9,7 +9,7 @@ const foodRoutes = require('./routes/food')
 const app = express()
 
 app.use(cors({
-    origin: 'https://fit-fuel.netlify.app/'
+    origin: 'https://fit-fuel.netlify.app'
 }))
 
 app.use(express.json())

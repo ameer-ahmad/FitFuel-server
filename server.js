@@ -19,7 +19,7 @@ app.use('/api/food', foodRoutes)
 
 mongoose.connect(process.env.MONGO_URI)
     .then(() => {
-        app.listen(process.env.PORT, () => {
+        app.listen(process.env.PORT || 3000, () => {
             console.log("connected to db & listening on port", process.env.PORT)
         }) 
     })
